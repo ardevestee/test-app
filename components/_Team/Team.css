@@ -1,0 +1,165 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+
+.team-heading {
+  color: #24242e;
+  text-align: center;
+  font-family: var(--def-font);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.team-heading span {
+  color: #4040da;
+}
+
+.team-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 20px;
+}
+
+.team-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-desc p {
+  margin: 5px;
+}
+
+.team-desc-name {
+  width: 80%;
+  color: #24242e;
+  text-align: center;
+  font-family: var(--def-font);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.team-desc-designation {
+  color: #24242e;
+  text-align: center;
+  font-family: var(--def-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.team-desc-subtext {
+  color: #4d4d4d;
+  text-align: center;
+  font-family: var(--def-font);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  width: 80%;
+  height: 50%;
+}
+
+.team-card-bg {
+  background-color: #4040da;
+  opacity: 0.06;
+  height: 25%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+}
+
+.team-card {
+  margin: 20px;
+  width: 540px;
+  height: 600px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 24px 60px 0px rgba(0, 0, 0, 0.05);
+}
+
+.team-card img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -90px;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1100px) {
+  .team-heading {
+    font-size: 40px;
+  }
+  .team .circle-button {
+    height: 54px;
+    width: 54px;
+    max-width: 54px;
+    max-height: 54px;
+    min-width: 54px;
+    min-height: 54px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .team-heading {
+    font-size: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .team-desc-name {
+    font-size: 24px;
+  }
+  .team-desc-designation {
+    font-size: 16px;
+    flex-grow: 0;
+  }
+  .team-desc-subtext {
+    font-size: 16px;
+  }
+  .team-card img {
+    height: 150px;
+    width: 150px;
+  }
+  .team-card {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .team .circle-button {
+    height: 36px;
+    width: 36px;
+    max-width: 36px;
+    max-height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+  }
+  .team-desc-name {
+    font-size: 21px;
+  }
+  .team-desc-designation {
+    font-size: 14px;
+  }
+  .team-desc-subtext {
+    font-size: 14px;
+  }
+  .team-card img {
+    margin-top: -45px;
+    height: 100px;
+    width: 100px;
+  }
+  .team-card {
+    height: 500px;
+  }
+}

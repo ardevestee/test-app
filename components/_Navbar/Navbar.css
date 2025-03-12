@@ -1,0 +1,60 @@
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 3vw;
+    width: 80%;
+}
+
+.logo{
+    flex-grow: 1;
+}
+
+.logo img{
+    width: 156px;
+}
+
+.nav-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail p{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--def-font);
+    margin: 12px;
+}
+
+@media only screen and (max-width:1100px) {
+    .logo img{
+        width: 120px;
+    }
+    .nav-buttons{
+        gap: 20px;
+    }
+    .mail p{
+        font-size: 14px;
+        margin: 1vw;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .navbar{
+        width: 90%;
+    }
+    .mail p{
+        display: none;
+    }
+    .nav-buttons{
+        gap: 10px;
+    }
+}

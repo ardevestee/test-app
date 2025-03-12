@@ -1,0 +1,47 @@
+.pill-button p {
+  margin: 12px;
+  font-family: var(--def-font);
+  font-size: 14px;
+}
+
+.pill-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  width: 210px;
+  height: 52px;
+  border: 1px solid;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pill-button img {
+  width: 10%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .pill-button p {
+    margin: 1vw;
+    font-size: 14px;
+  }
+
+  .pill-button {
+    height: 40px;
+    width: 190px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .pill-button p {
+    display: none;
+  }
+
+  .pill-button {
+    height: 36px;
+    width: 36px;
+  }
+  .pill-button img {
+    width: 50%;
+  }
+}
