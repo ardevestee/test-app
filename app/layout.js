@@ -1,7 +1,8 @@
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
-  title: "Estee PMS | PortFolio Management Services",
+  title: "Estee PMS | Portfolio Management Services",
   description:
     "Estee offers portfolio management services built on systematic investing approach. We incorporate investing insights in our products by tracking markets, fundamentals, technicals, and macro economic conditions.",
   keywords:
@@ -11,7 +12,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head></head>
+      <body>
+        {/* Google tag (gtag.js) */}
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-TC1EEMSJD8" />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-TC1EEMSJD8');
+            `,
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
