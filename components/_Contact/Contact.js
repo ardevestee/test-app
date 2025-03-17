@@ -35,6 +35,8 @@ const Contact = () => {
       leadSrc = "Google Ads";
     } else if (searchParams.get("utm_source") === "Linkedin") {
       leadSrc = "Linkedin";
+    } else if (searchParams.get("utm_source") === "LinkedIn") {
+      leadSrc = "Linkedin";
     } else if (searchParams.get("utm_source") === "Facebook") {
       leadSrc = "Facebook";
     }
